@@ -15,12 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize mobile menu
     initMobileMenu();
-<<<<<<< HEAD
-
-    initHeroVideo();
-
-=======
->>>>>>> master
 });
 
 /**
@@ -92,41 +86,6 @@ function initFormValidation() {
         });
     });
 }
-<<<<<<< HEAD
-function initHeroVideo(){
-  const video = document.getElementById('heroVideo');
-  const btn = document.getElementById('unmuteBtn');
-
-  if(!video || !btn) return;
-
-  // 1) Au clic : activer le son, relancer, puis cacher le bouton
-  btn.addEventListener('click', async () => {
-    try{
-      video.muted = false;
-      video.volume = 1;
-      await video.play();
-      btn.classList.add('is-hidden');
-
-      // 2) Stop au bout de 7 secondes (figé sur la dernière image)
-      setTimeout(() => {
-        video.pause();
-        video.currentTime = Math.min(video.duration || 7, 7);
-      }, 7000);
-
-    } catch(e){
-      console.log('Autoplay with sound blocked:', e);
-    }
-  });
-
-  // Optionnel : si tu veux que ça se fige même en muet après 7s
-  // (si tu préfères: commente cette partie)
-  setTimeout(() => {
-    video.pause();
-  }, 7000);
-}
-
-=======
->>>>>>> master
 
 /**
  * Email validation helper
@@ -192,41 +151,6 @@ function initMobileMenu() {
     }
 }
 
-<<<<<<< HEAD
-function initHeroVideo(){
-  const video = document.getElementById('heroVideo');
-  const btn = document.getElementById('unmuteBtn');
-
-  if(!video || !btn) return;
-
-  // 1) Au clic : activer le son, relancer, puis cacher le bouton
-  btn.addEventListener('click', async () => {
-    try{
-      video.muted = false;
-      video.volume = 1;
-      await video.play();
-      btn.classList.add('is-hidden');
-
-      // 2) Stop au bout de 7 secondes (figé sur la dernière image)
-      setTimeout(() => {
-        video.pause();
-        video.currentTime = Math.min(video.duration || 7, 7);
-      }, 7000);
-
-    } catch(e){
-      console.log('Autoplay with sound blocked:', e);
-    }
-  });
-
-  // Optionnel : si tu veux que ça se fige même en muet après 7s
-  // (si tu préfères: commente cette partie)
-  setTimeout(() => {
-    video.pause();
-  }, 7000);
-}
-
-=======
->>>>>>> master
 // Export utilities
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
@@ -266,32 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     video.pause();
                 }
-<<<<<<< HEAD
-            }); // Unmute button for header video
-const video = document.querySelector('.banner-video-bg');
-const unmuteBtn = document.getElementById('unmuteBtn');
-
-if (video && unmuteBtn) {
-  unmuteBtn.addEventListener('click', async () => {
-    video.muted = false;
-    video.volume = 1;
-
-    try { await video.play(); } catch (e) {}
-
-    unmuteBtn.style.display = 'none';
-  }); if (video) {
-  setTimeout(() => {
-    video.pause();
-    // option: reste sur la dernière frame
-    try { video.currentTime = video.duration; } catch (e) {}
-  }, 7000);
-}
-
-}
-
-=======
             });
->>>>>>> master
         }, { threshold: 0.25 });
 
         observer.observe(video);
