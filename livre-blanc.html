@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livre Blanc 7 Ensemble - Redonner du pouvoir d'achat</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/livre-blanc-styles.css">
 </head>
 <body>
     <div id="header-container"></div>
+=======
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/7EFav.ico">
+    <link rel="stylesheet" href="css/livre-blanc-styles.css">
+
+    <!-- SITE-NAV  –  Self-contained, conflict-free header styles -->
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+
+    <!-- Video Banner -->
+    <section class="mission-banner-video">
+        <div class="banner-video-container">
+            <video class="banner-video-bg" autoplay loop muted playsinline poster="img/banner.png">
+                <source src="img/banner-video.mp4" type="video/mp4">
+            </video>
+            <div class="banner-video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         SITE-NAV  –  Self-contained, conflict-free header
+         ===================================================== -->
+    <div id="site-nav">
+        <div class="sn-inner">
+            <a href="index.html" class="sn-logo">7 Ensemble</a>
+            <button class="sn-burger" aria-label="Ouvrir le menu" onclick="snOpen()">&#9776;</button>
+            <nav class="sn-links">
+                <a href="index.html">Accueil</a>
+                <a href="les7tours.html">Les 7 Tours</a>
+                <a href="mission.html">Mission</a>
+            </nav>
+            <button class="sn-cta" onclick="showModalBothOptions()">Rejoindre la révolution</button>
+        </div>
+    </div>
+
+    <!-- Mobile full-screen overlay (position:fixed → above all stacking contexts) -->
+    <div id="sn-overlay">
+        <button class="sn-ov-close" aria-label="Fermer le menu" onclick="snClose()">&#10005;</button>
+        <a href="index.html">Accueil</a>
+        <a href="les7tours.html">Les 7 Tours</a>
+        <a href="mission.html">Mission</a>
+        <a href="livre-blanc.html">Livre Blanc</a>
+    </div>
+    <script src="js/header.js"></script>
+>>>>>>> master
 
     <div>
         <main class="main-container">
@@ -173,6 +222,7 @@
                 </div>
 
                 <div class="media-section">
+<<<<<<< HEAD
   <h3>🎵 Chanson d'introduction</h3>
 
   <div class="audio-player">
@@ -184,6 +234,13 @@
 </div>
 
 
+=======
+                    <h3>🎵 Chanson d'introduction</h3>
+                    <div class="audio-player">
+                        <iframe style="border-radius:12px; width: 100%; height: 152px;" src="https://suno.com/embed/OcG9lXbjz6qp6FbM" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+>>>>>>> master
 
                 <div class="video-placeholder">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -538,12 +595,27 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
                 <div class="video-placeholder">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polygon points="5 3 19 12 5 21 5 3"></polygon>
                     </svg>
                     <p>Zone vidéo - Données et analyses</p>
                     <small>Insérez vos vidéos de reportages et analyses</small>
+=======
+                <!-- Puzzle image – "Ça suffit, ça doit changer" -->
+                <div style="text-align:center;margin:2rem 0;">
+                    <a href="https://puzzlesnap.com/share/7ae0411247c117a" target="_blank" rel="noopener noreferrer" style="display:inline-block;">
+                        <img src="https://puzzlesnap.com/user-images-new/7ae0411247c117a.png"
+                             alt="Ça suffit, ça doit changer"
+                             style="width:100%;max-width:700px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,0.25);display:block;margin:0 auto;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;"
+                             onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.35)'"
+                             onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.25)'">
+                    </a>
+                    <p style="margin-top:0.75rem;font-size:0.95rem;color:#666;">
+                        👆 Cliquez sur l'image pour jouer au puzzle
+                    </p>
+>>>>>>> master
                 </div>
 
                 <!-- ANALYSE SECTION -->
@@ -1450,6 +1522,7 @@
 
     <!-- External Scripts -->
     <script src="js/main.js"></script>
+<<<<<<< HEAD
     <script src="js/modal.js"></script>
     <script src="js/livre-blanc-script.js"></script>
 <script>
@@ -1458,5 +1531,10 @@ fetch('header-snippet.html')
   .then(html => document.getElementById('header-container').innerHTML = html);
 </script>
 
+=======
+    <script src="js/modal-html.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/livre-blanc-script.js"></script>
+>>>>>>> master
 </body>
 </html>

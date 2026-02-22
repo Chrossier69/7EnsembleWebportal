@@ -5,16 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Ensemble - Votre Nouvelle Aventure Financière</title>
 
+<<<<<<< HEAD
+=======
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/7EFav.ico">
+
+>>>>>>> master
     <!-- Preload hero video for better performance (desktop only) -->
     <link rel="preload" as="image" href="/img/banner-img.png">
     <link rel="preload" as="video" href="/img/banner-video.mp4" media="(min-width: 769px)">
 
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+<<<<<<< HEAD
 </head>
 <body>
     <div id="header-container"></div>
  
+=======
+
+    <!-- SITE-NAV  –  Self-contained, conflict-free header styles -->
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <!-- Video Banner Header -->
+    <section class="mission-banner-video">
+        <div class="banner-video-container">
+            <video class="banner-video-bg" autoplay loop muted playsinline poster="img/banner.png">
+                <source src="img/banner-video.mp4" type="video/mp4">
+            </video>
+            <div class="banner-video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         SITE-NAV  –  Self-contained, conflict-free header
+         ===================================================== -->
+    <div id="site-nav">
+        <div class="sn-inner">
+            <a href="index.html" class="sn-logo">7 Ensemble</a>
+            <button class="sn-burger" aria-label="Ouvrir le menu" onclick="snOpen()">&#9776;</button>
+            <nav class="sn-links">
+                <a href="index.html">Accueil</a>
+                <a href="les7tours.html">Les 7 Tours</a>
+                <a href="mission.html">Mission</a>
+            </nav>
+            <button class="sn-cta" onclick="showModalBothOptions()">Rejoindre la révolution</button>
+        </div>
+    </div>
+
+    <!-- Mobile full-screen overlay (position:fixed → above all stacking contexts) -->
+    <div id="sn-overlay">
+        <button class="sn-ov-close" aria-label="Fermer le menu" onclick="snClose()">&#10005;</button>
+        <a href="index.html">Accueil</a>
+        <a href="les7tours.html">Les 7 Tours</a>
+        <a href="mission.html">Mission</a>
+        <a href="livre-blanc.html">Livre Blanc</a>
+    </div>
+    <script src="js/header.js"></script>
+
+>>>>>>> master
     <main>
         <!-- Hero Section with Normal Background -->
         <section class="hero">
@@ -411,6 +461,7 @@
         </section>
     </main>
 
+<<<<<<< HEAD
     <!-- Unified Registration Modal -->
     <div id="registrationModal" class="modal">
         <div class="modal-content">
@@ -514,6 +565,8 @@
         </div>
     </div>
 
+=======
+>>>>>>> master
     <!-- Enhanced Footer with Document Links -->
     <div id="footer"></div>
 
@@ -525,6 +578,7 @@
     });
 </script>
 
+<<<<<<< HEAD
 
     <!-- External Scripts -->
     <script src="js/main.js"></script>
@@ -536,5 +590,12 @@ fetch("header-snippet.html")
   .then(html => document.getElementById("header-container").innerHTML = html);
 </script>
 
+=======
+    <!-- External Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/modal-html.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/animations.js"></script>
+>>>>>>> master
 </body>
 </html>

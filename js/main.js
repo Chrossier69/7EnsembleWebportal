@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize mobile menu
     initMobileMenu();
+<<<<<<< HEAD
 
     initHeroVideo();
 
+=======
+>>>>>>> master
 });
 
 /**
@@ -89,6 +92,7 @@ function initFormValidation() {
         });
     });
 }
+<<<<<<< HEAD
 function initHeroVideo(){
   const video = document.getElementById('heroVideo');
   const btn = document.getElementById('unmuteBtn');
@@ -121,6 +125,8 @@ function initHeroVideo(){
   }, 7000);
 }
 
+=======
+>>>>>>> master
 
 /**
  * Email validation helper
@@ -186,6 +192,7 @@ function initMobileMenu() {
     }
 }
 
+<<<<<<< HEAD
 function initHeroVideo(){
   const video = document.getElementById('heroVideo');
   const btn = document.getElementById('unmuteBtn');
@@ -218,6 +225,8 @@ function initHeroVideo(){
   }, 7000);
 }
 
+=======
+>>>>>>> master
 // Export utilities
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
@@ -257,6 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     video.pause();
                 }
+<<<<<<< HEAD
             }); // Unmute button for header video
 const video = document.querySelector('.banner-video-bg');
 const unmuteBtn = document.getElementById('unmuteBtn');
@@ -279,6 +289,9 @@ if (video && unmuteBtn) {
 
 }
 
+=======
+            });
+>>>>>>> master
         }, { threshold: 0.25 });
 
         observer.observe(video);

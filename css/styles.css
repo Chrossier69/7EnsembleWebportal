@@ -116,13 +116,18 @@ header {
     width: 100%;
 }
 
+<<<<<<< HEAD
 nav {
+=======
+header > nav {
+>>>>>>> master
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+<<<<<<< HEAD
 /* Aligne bien le logo dans la barre */
 .logo.site-title {
   display: inline-flex;
@@ -138,6 +143,8 @@ nav {
   line-height: -1px;
 }
 
+=======
+>>>>>>> master
 
 .logo {
     font-size: 1.75rem;
@@ -571,7 +578,10 @@ nav {
 /* === PRINCIPE SECTION === */
 .principe-section {
     background: rgba(255, 255, 255, 0.05);
+<<<<<<< HEAD
     backdrop-filter: blur(20px);
+=======
+>>>>>>> master
     margin: 3rem auto;
     max-width: 1400px;
     border-radius: 2rem;
@@ -664,7 +674,10 @@ nav {
     border-radius: 25px;
     margin: 3rem 0;
     text-align: center;
+<<<<<<< HEAD
     backdrop-filter: blur(10px);
+=======
+>>>>>>> master
     border: 1px solid rgba(255,255,255,0.2);
     position: relative;
     overflow: hidden;
@@ -4157,7 +4170,11 @@ td.amount {
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     height: 100%;
+=======
+    height: 121%;
+>>>>>>> master
     z-index: 1;
     overflow: hidden;
 }
@@ -4296,8 +4313,11 @@ td.amount {
         padding: 4rem 4rem;
     }
 }
+<<<<<<< HEAD
 .logo-tilt{
   display: inline-block;
   transform: rotate(-7deg);
   transform-origin: left center;
 }
+=======
+>>>>>>> master
